@@ -1,0 +1,33 @@
+/* Preview-card host — shared across all design-system cards.
+   Cards render at exactly the registered width/height; no scrollbars, no titles. */
+@import url("../colors_and_type.css");
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--fg1);
+  font-family: var(--font-sans);
+  overflow: hidden;
+}
+.card {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.row { display: flex; gap: 12px; align-items: stretch; }
+.row.wrap { flex-wrap: wrap; }
+.col { display: flex; flex-direction: column; gap: 8px; }
+.label {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--fg2);
+  font-weight: 600;
+}
+.mono { font-family: var(--font-mono); }
+.hint { font-size: 12px; color: var(--fg3); }

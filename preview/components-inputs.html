@@ -1,0 +1,22 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="_card.css">
+<style>
+  .card { gap: 14px; justify-content: center; padding: 18px 22px; }
+  .field { display: flex; flex-direction: column; gap: 6px; }
+  .lbl { font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--fg2); }
+  input, textarea {
+    background: #0B0F14; border: 1px solid var(--border); border-radius: 6px;
+    padding: 10px 12px; color: var(--fg1); font-family: var(--font-sans); font-size: 14px;
+    outline: none; transition: all 150ms cubic-bezier(0.16,1,0.3,1);
+  }
+  input:focus, textarea:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(88,166,255,0.18); }
+  input::placeholder, textarea::placeholder { color: var(--fg3); }
+  .row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+</style></head>
+<body><div class="card">
+  <div class="row">
+    <div class="field"><label class="lbl">Name</label><input value="Recruiter" /></div>
+    <div class="field"><label class="lbl">Email · focused</label><input value="hello@" autofocus /></div>
+  </div>
+  <div class="field"><label class="lbl">Message</label><textarea rows="2" placeholder="Tell me about your project…"></textarea></div>
+</div></body></html>

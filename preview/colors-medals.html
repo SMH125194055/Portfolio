@@ -1,0 +1,21 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="_card.css">
+<style>
+  .row3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; flex: 1; }
+  .medal { border-radius: 10px; padding: 14px; background: var(--surface); border: 1px solid var(--border); position: relative; display: flex; flex-direction: column; gap: 6px; }
+  .medal .ring { position: absolute; inset: 0; border-radius: 10px; pointer-events: none; }
+  .gold   .ring { box-shadow: inset 0 0 0 1px rgba(210,153,34,0.5), 0 0 24px rgba(210,153,34,0.15); }
+  .silver .ring { box-shadow: inset 0 0 0 1px rgba(177,186,196,0.45), 0 0 24px rgba(177,186,196,0.12); }
+  .bronze .ring { box-shadow: inset 0 0 0 1px rgba(189,123,61,0.5), 0 0 24px rgba(189,123,61,0.15); }
+  .em { font-size: 28px; line-height: 1; }
+  .nm { font-size: 14px; font-weight: 600; }
+  .hex { font-family: var(--font-mono); font-size: 11px; color: var(--fg2); }
+</style></head>
+<body><div class="card">
+  <div class="label">Medal tones · achievement card glows</div>
+  <div class="row3">
+    <div class="medal gold"><div class="ring"></div><span class="em">📄</span><span class="nm" style="color:#D29922">Gold · Published</span><span class="hex">#D29922</span></div>
+    <div class="medal silver"><div class="ring"></div><span class="em">🎓</span><span class="nm" style="color:#B1BAC4">Silver · Dean's List</span><span class="hex">#B1BAC4</span></div>
+    <div class="medal bronze"><div class="ring"></div><span class="em">🥉</span><span class="nm" style="color:#BD7B3D">Bronze · 3rd Place</span><span class="hex">#BD7B3D</span></div>
+  </div>
+</div></body></html>

@@ -1,0 +1,40 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="_card.css">
+<style>
+  .card { gap: 14px; justify-content: center; padding: 22px; }
+  .stage { display: flex; gap: 14px; align-items: center; }
+  .logo-block {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+    padding: 18px 24px; display: flex; align-items: baseline; gap: 0;
+    font-family: var(--font-mono); font-weight: 700; font-size: 32px; letter-spacing: -0.02em;
+    color: var(--fg1);
+  }
+  .logo-block .slash { color: var(--fg2); font-weight: 500; }
+  .cursor { display: inline-block; width: 4px; height: 28px; background: var(--accent); margin-left: 4px; transform: translateY(4px); animation: blink 1.1s steps(2,end) infinite; }
+  @keyframes blink { 50% { opacity: 0 } }
+
+  .mark {
+    width: 64px; height: 64px; border-radius: 14px;
+    background: #161B22; border: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--font-mono); font-weight: 700; font-size: 18px; color: var(--accent);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.04);
+    position: relative;
+  }
+  .mark::after { content:""; display:inline-block; width: 2px; height: 18px; background: var(--accent); margin-left: 1px; animation: blink 1.1s steps(2,end) infinite; }
+  .nm { font-family: var(--font-mono); font-size: 11px; color: var(--fg2); }
+  .col { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+</style></head>
+<body><div class="card">
+  <div class="label">Brand mark &amp; lockup</div>
+  <div class="stage">
+    <div class="col">
+      <div class="mark">SMH</div>
+      <div class="nm">mark · 64×64</div>
+    </div>
+    <div class="col" style="flex:1">
+      <div class="logo-block">SMH<span class="cursor"></span><span class="slash" style="font-size:24px;margin-left:6px">/dev</span></div>
+      <div class="nm">JetBrains Mono · 700 · blinking accent cursor</div>
+    </div>
+  </div>
+</div></body></html>

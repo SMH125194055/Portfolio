@@ -1,0 +1,33 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="_card.css">
+<style>
+  .card { gap: 14px; justify-content: center; padding: 22px; }
+  .item {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+    padding: 14px 16px; box-shadow: inset 0 1px 0 rgba(255,255,255,0.04);
+  }
+  .top { display: flex; align-items: center; gap: 10px; }
+  .glyph { font-size: 18px; }
+  .title { font-size: 15px; font-weight: 600; }
+  .sub { font-family: var(--font-mono); font-size: 11px; color: var(--fg2); }
+  .badge {
+    margin-left: auto; padding: 3px 8px; border-radius: 999px;
+    background: rgba(63,185,80,0.14); color: #56D068; font-family: var(--font-mono); font-size: 10px;
+    display: inline-flex; align-items: center; gap: 5px; font-weight: 600;
+  }
+  .badge .dot { width: 6px; height: 6px; border-radius: 999px; background: #3FB950; box-shadow: 0 0 0 4px rgba(63,185,80,0.18); animation: pulse 2s ease-in-out infinite; }
+  @keyframes pulse { 50% { box-shadow: 0 0 0 7px rgba(63,185,80,0); } }
+  .desc { font-size: 12px; color: var(--fg2); margin-top: 6px; line-height: 1.5; }
+</style></head>
+<body><div class="card">
+  <div class="label">Timeline entry · with CURRENT badge (pulsing dot)</div>
+  <div class="item">
+    <div class="top">
+      <span class="glyph">🏢</span>
+      <span class="title">AI &amp; Full-Stack Developer</span>
+      <span class="badge"><span class="dot"></span>CURRENT</span>
+    </div>
+    <div class="sub" style="margin-top:4px">Technology Company · Mar 2026 – Present · Karachi, Pakistan</div>
+    <div class="desc">Building production AI systems, SaaS platforms, and automation tools. Key projects: AI Lead Automation, Chatty Bot SaaS, WordPress AI Chatbots.</div>
+  </div>
+</div></body></html>

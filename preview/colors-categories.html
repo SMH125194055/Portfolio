@@ -1,0 +1,20 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="_card.css">
+<style>
+  .grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; flex: 1; }
+  .cat { border-radius: 10px; padding: 14px; border: 1px solid var(--border); background: var(--surface); display: flex; flex-direction: column; gap: 8px; }
+  .swatch { height: 36px; border-radius: 6px; }
+  .nm { font-size: 13px; font-weight: 600; color: var(--fg1); }
+  .hex { font-family: var(--font-mono); font-size: 10px; color: var(--fg2); }
+  .tag { display:inline-flex; padding: 3px 8px; border-radius: 4px; font-size: 10px; font-family: var(--font-mono); align-self: flex-start; }
+</style></head>
+<body><div class="card">
+  <div class="label">Category accents · used for tags, hover glows, badges</div>
+  <div class="grid">
+    <div class="cat"><div class="swatch" style="background:#7C3AED"></div><div class="nm">AI / ML</div><div class="hex">#7C3AED</div><div class="tag" style="background:rgba(124,58,237,0.14);color:#7C3AED">PyTorch</div></div>
+    <div class="cat"><div class="swatch" style="background:#58A6FF"></div><div class="nm">Backend</div><div class="hex">#58A6FF</div><div class="tag" style="background:rgba(88,166,255,0.14);color:#58A6FF">FastAPI</div></div>
+    <div class="cat"><div class="swatch" style="background:#39D0D8"></div><div class="nm">Frontend</div><div class="hex">#39D0D8</div><div class="tag" style="background:rgba(57,208,216,0.14);color:#39D0D8">Next.js</div></div>
+    <div class="cat"><div class="swatch" style="background:#3FB950"></div><div class="nm">Infra / DB</div><div class="hex">#3FB950</div><div class="tag" style="background:rgba(63,185,80,0.14);color:#3FB950">Docker</div></div>
+    <div class="cat"><div class="swatch" style="background:#F0883E"></div><div class="nm">Integrations</div><div class="hex">#F0883E</div><div class="tag" style="background:rgba(240,136,62,0.14);color:#F0883E">Stripe</div></div>
+  </div>
+</div></body></html>
