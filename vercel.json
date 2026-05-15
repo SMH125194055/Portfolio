@@ -1,0 +1,17 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/ui_kits/portfolio/index.html" },
+    { "source": "/App.jsx", "destination": "/ui_kits/portfolio/App.jsx" },
+    { "source": "/About.jsx", "destination": "/ui_kits/portfolio/About.jsx" },
+    { "source": "/Achievements.jsx", "destination": "/ui_kits/portfolio/Achievements.jsx" },
+    { "source": "/Contact.jsx", "destination": "/ui_kits/portfolio/Contact.jsx" },
+    { "source": "/Experience.jsx", "destination": "/ui_kits/portfolio/Experience.jsx" },
+    { "source": "/Hero.jsx", "destination": "/ui_kits/portfolio/Hero.jsx" },
+    { "source": "/Navbar.jsx", "destination": "/ui_kits/portfolio/Navbar.jsx" },
+    { "source": "/Projects.jsx", "destination": "/ui_kits/portfolio/Projects.jsx" },
+    { "source": "/Skills.jsx", "destination": "/ui_kits/portfolio/Skills.jsx" },
+    { "source": "/kit.jsx", "destination": "/ui_kits/portfolio/kit.jsx" },
+    { "source": "/kit.css", "destination": "/ui_kits/portfolio/kit.css" },
+    { "source": "/data.js", "destination": "/ui_kits/portfolio/data.js" }
+  ]
+}
