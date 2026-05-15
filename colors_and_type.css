@@ -1,0 +1,236 @@
+/* ============================================================
+   SMH Portfolio — Design Tokens
+   Dark, GitHub-inspired developer portfolio aesthetic.
+   ============================================================ */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap");
+
+:root {
+  /* ---------- Surfaces ---------- */
+  --bg:           #0D1117;  /* page background — GitHub dark */
+  --bg-elev-1:    #0F141A;  /* between page + card */
+  --surface:      #161B22;  /* default card */
+  --surface-2:    #1C232C;  /* hovered card / nested surface */
+  --surface-3:    #232B36;  /* pressed / active */
+  --border:       #30363D;  /* default border */
+  --border-soft:  #21262D;  /* hairline divider */
+  --border-bold:  #484F58;  /* focused / strong border */
+
+  /* ---------- Foregrounds ---------- */
+  --fg1:          #C9D1D9;  /* primary text */
+  --fg2:          #8B949E;  /* secondary text / captions */
+  --fg3:          #6E7681;  /* tertiary / placeholder */
+  --fg-on-accent: #FFFFFF;  /* text on filled accent buttons */
+
+  /* ---------- Accents (also category colors) ---------- */
+  --accent:           #58A6FF;  /* primary — links, focus, CTAs */
+  --accent-hover:     #79B8FF;
+  --accent-press:     #388BFD;
+  --accent-soft:      rgba(88, 166, 255, 0.12);
+
+  --ai:               #7C3AED;  /* AI/ML — purple */
+  --ai-soft:          rgba(124, 58, 237, 0.14);
+  --backend:          #58A6FF;  /* Backend — blue (same as accent) */
+  --backend-soft:     rgba(88, 166, 255, 0.12);
+  --frontend:         #39D0D8;  /* Frontend/Mobile — cyan */
+  --frontend-soft:    rgba(57, 208, 216, 0.12);
+  --infra:            #3FB950;  /* Databases & Infra — green */
+  --infra-soft:       rgba(63, 185, 80, 0.12);
+  --integration:      #F0883E;  /* Integrations — orange */
+  --integration-soft: rgba(240, 136, 62, 0.12);
+
+  /* ---------- Status ---------- */
+  --success:      #3FB950;
+  --success-soft: rgba(63, 185, 80, 0.14);
+  --warning:      #D29922;  /* gold — also achievements */
+  --warning-soft: rgba(210, 153, 34, 0.14);
+  --danger:       #F85149;
+  --danger-soft:  rgba(248, 81, 73, 0.14);
+
+  /* Achievement medal tones */
+  --gold:    #D29922;
+  --silver:  #B1BAC4;
+  --bronze:  #BD7B3D;
+
+  /* ---------- Typography ---------- */
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  /* Type scale — 4-pt rhythm, optimized for 1440+ desktop */
+  --fs-display:   72px;   /* hero name */
+  --fs-h1:        48px;   /* section titles */
+  --fs-h2:        32px;   /* sub-section / featured project title */
+  --fs-h3:        24px;   /* card title */
+  --fs-h4:        18px;
+  --fs-body:      16px;
+  --fs-sm:        14px;
+  --fs-xs:        12px;
+  --fs-mono:      14px;
+
+  --lh-tight:     1.1;
+  --lh-snug:      1.3;
+  --lh-normal:    1.5;
+  --lh-relaxed:   1.7;   /* body copy */
+
+  --tracking-tight:  -0.02em;  /* large display */
+  --tracking-normal: 0;
+  --tracking-wide:   0.08em;   /* eyebrow / labels */
+
+  --fw-regular:  400;
+  --fw-medium:   500;
+  --fw-semibold: 600;
+  --fw-bold:     700;
+  --fw-black:    800;
+
+  /* ---------- Spacing (4-pt scale) ---------- */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  20px;
+  --space-6:  24px;
+  --space-8:  32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+  --space-32: 128px;
+
+  /* Section vertical rhythm */
+  --section-y:        96px;   /* desktop */
+  --section-y-mobile: 64px;
+
+  /* Container widths */
+  --container-max: 1200px;
+  --container-pad: 24px;
+
+  /* ---------- Radii ---------- */
+  --radius-xs: 4px;   /* pills, tags */
+  --radius-sm: 6px;   /* inputs, small buttons */
+  --radius-md: 10px;  /* cards */
+  --radius-lg: 14px;  /* featured cards */
+  --radius-xl: 20px;  /* hero panels */
+  --radius-pill: 999px;
+
+  /* ---------- Shadows / Glow ---------- */
+  --shadow-1: 0 1px 2px rgba(0,0,0,0.4);
+  --shadow-2: 0 4px 12px rgba(0,0,0,0.45);
+  --shadow-3: 0 12px 32px rgba(0,0,0,0.55);
+  --shadow-lift: 0 16px 40px rgba(0,0,0,0.6);
+
+  /* Glow halos — colored shadows for hover states */
+  --glow-accent:      0 0 0 1px rgba(88,166,255,0.45), 0 12px 32px rgba(88,166,255,0.18);
+  --glow-ai:          0 0 0 1px rgba(124,58,237,0.45), 0 12px 32px rgba(124,58,237,0.20);
+  --glow-frontend:    0 0 0 1px rgba(57,208,216,0.45), 0 12px 32px rgba(57,208,216,0.18);
+  --glow-infra:       0 0 0 1px rgba(63,185,80,0.45),  0 12px 32px rgba(63,185,80,0.18);
+  --glow-integration: 0 0 0 1px rgba(240,136,62,0.45), 0 12px 32px rgba(240,136,62,0.18);
+  --glow-gold:        0 0 0 1px rgba(210,153,34,0.45), 0 12px 32px rgba(210,153,34,0.18);
+
+  /* Inset highlight that gives cards a subtle "glass" top edge */
+  --inset-top: inset 0 1px 0 rgba(255,255,255,0.04);
+
+  /* ---------- Motion ---------- */
+  --ease-out:   cubic-bezier(0.16, 1, 0.3, 1);    /* primary easing */
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1); /* slight overshoot */
+
+  --dur-fast:   150ms;
+  --dur-base:   220ms;
+  --dur-slow:   400ms;
+  --dur-stagger: 80ms;   /* delay between siblings */
+
+  /* ---------- Backgrounds / Patterns ---------- */
+  --grid-line: rgba(88, 166, 255, 0.06);
+  --gradient-hero: radial-gradient(1200px 600px at 20% 0%, rgba(88,166,255,0.10), transparent 60%),
+                   radial-gradient(900px 500px at 80% 20%, rgba(124,58,237,0.10), transparent 60%);
+}
+
+/* ============================================================
+   Semantic element styles — apply var-driven defaults
+   ============================================================ */
+
+html, body {
+  background: var(--bg);
+  color: var(--fg1);
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+  line-height: var(--lh-relaxed);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-size: var(--fs-h1);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--fg1);
+  margin: 0;
+}
+
+h2 {
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-snug);
+  letter-spacing: var(--tracking-tight);
+  color: var(--fg1);
+  margin: 0;
+}
+
+h3 {
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-semibold);
+  line-height: var(--lh-snug);
+  color: var(--fg1);
+  margin: 0;
+}
+
+h4 {
+  font-size: var(--fs-h4);
+  font-weight: var(--fw-semibold);
+  line-height: var(--lh-snug);
+  color: var(--fg1);
+  margin: 0;
+}
+
+p {
+  font-size: var(--fs-body);
+  line-height: var(--lh-relaxed);
+  color: var(--fg1);
+  margin: 0;
+}
+
+small, .caption {
+  font-size: var(--fs-sm);
+  color: var(--fg2);
+}
+
+.eyebrow {
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semibold);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--fg2);
+}
+
+code, kbd, pre, .mono {
+  font-family: var(--font-mono);
+  font-size: var(--fs-mono);
+  color: var(--fg1);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color var(--dur-fast) var(--ease-out);
+}
+a:hover { color: var(--accent-hover); }
+
+/* Display class — hero name */
+.display {
+  font-size: var(--fs-display);
+  font-weight: var(--fw-black);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--tracking-tight);
+}

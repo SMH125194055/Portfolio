@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <radialGradient id="g1" cx="20%" cy="0%" r="60%">
+      <stop offset="0%" stop-color="#58A6FF" stop-opacity="0.18"></stop>
+      <stop offset="100%" stop-color="#58A6FF" stop-opacity="0"></stop>
+    </radialGradient>
+    <radialGradient id="g2" cx="85%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.18"></stop>
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0"></stop>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#58A6FF" stroke-opacity="0.05" stroke-width="1"></path>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="#0D1117"></rect>
+  <rect width="1200" height="630" fill="url(#grid)"></rect>
+  <rect width="1200" height="630" fill="url(#g1)"></rect>
+  <rect width="1200" height="630" fill="url(#g2)"></rect>
+
+  <g font-family="JetBrains Mono, ui-monospace, monospace" fill="#8B949E" font-size="18">
+    <text x="80" y="120">$ whoami</text>
+    <text x="80" y="150" fill="#3FB950">→ syed_muhammad_huzaifa</text>
+  </g>
+
+  <text x="80" y="290" font-family="Inter, sans-serif" font-weight="800" font-size="84" letter-spacing="-2" fill="#C9D1D9">
+    Syed Muhammad Huzaifa
+  </text>
+  <text x="80" y="350" font-family="Inter, sans-serif" font-weight="600" font-size="36" fill="#58A6FF">
+    AI Engineer &amp; Full-Stack Developer
+  </text>
+  <text x="80" y="410" font-family="Inter, sans-serif" font-weight="400" font-size="22" fill="#8B949E">
+    I build AI systems and full-stack products that ship to production.
+  </text>
+
+  <g font-family="JetBrains Mono, monospace" font-size="16" fill="#C9D1D9">
+    <rect x="80" y="470" width="92" height="32" rx="4" fill="rgba(124,58,237,0.14)" stroke="#7C3AED" stroke-opacity="0.5"></rect>
+    <text x="126" y="491" text-anchor="middle">RAG</text>
+    <rect x="184" y="470" width="120" height="32" rx="4" fill="rgba(124,58,237,0.14)" stroke="#7C3AED" stroke-opacity="0.5"></rect>
+    <text x="244" y="491" text-anchor="middle">Agentic AI</text>
+    <rect x="316" y="470" width="108" height="32" rx="4" fill="rgba(88,166,255,0.14)" stroke="#58A6FF" stroke-opacity="0.5"></rect>
+    <text x="370" y="491" text-anchor="middle">Next.js 14</text>
+    <rect x="436" y="470" width="120" height="32" rx="4" fill="rgba(57,208,216,0.14)" stroke="#39D0D8" stroke-opacity="0.5"></rect>
+    <text x="496" y="491" text-anchor="middle">React Native</text>
+    <rect x="568" y="470" width="108" height="32" rx="4" fill="rgba(63,185,80,0.14)" stroke="#3FB950" stroke-opacity="0.5"></rect>
+    <text x="622" y="491" text-anchor="middle">FastAPI</text>
+    <rect x="688" y="470" width="96" height="32" rx="4" fill="rgba(240,136,62,0.14)" stroke="#F0883E" stroke-opacity="0.5"></rect>
+    <text x="736" y="491" text-anchor="middle">Docker</text>
+  </g>
+
+  <g transform="translate(1020, 540)" font-family="JetBrains Mono, monospace" font-size="22" font-weight="700">
+    <text fill="#C9D1D9">SMH</text>
+    <rect x="50" y="-18" width="3" height="22" fill="#58A6FF"></rect>
+  </g>
+</svg>

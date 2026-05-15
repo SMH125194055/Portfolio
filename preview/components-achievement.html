@@ -1,0 +1,39 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="_card.css">
+<style>
+  .card { gap: 14px; justify-content: center; padding: 22px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .ach {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+    padding: 14px 16px; position: relative; display: flex; flex-direction: column; gap: 4px;
+  }
+  .ach .ring { position: absolute; inset: 0; border-radius: 12px; pointer-events: none; }
+  .gold   .ring { box-shadow: inset 0 0 0 1px rgba(210,153,34,0.55), 0 0 26px rgba(210,153,34,0.18); }
+  .bronze .ring { box-shadow: inset 0 0 0 1px rgba(189,123,61,0.55), 0 0 26px rgba(189,123,61,0.18); }
+  .top { display: flex; align-items: center; gap: 8px; }
+  .glyph { font-size: 18px; }
+  .ttl { font-size: 14px; font-weight: 600; }
+  .sub { font-family: var(--font-mono); font-size: 10px; color: var(--fg2); }
+  .pill {
+    margin-top: 6px; align-self: flex-start;
+    padding: 3px 8px; border-radius: 999px; font-family: var(--font-mono); font-size: 10px;
+    background: rgba(210,153,34,0.14); color: #D29922; font-weight: 600;
+  }
+  .bronze .pill { background: rgba(189,123,61,0.14); color: #D49A65; }
+</style></head>
+<body><div class="card">
+  <div class="grid">
+    <div class="ach gold">
+      <div class="ring"></div>
+      <div class="top"><span class="glyph">📄</span><span class="ttl">Published Researcher</span></div>
+      <div class="sub">"Multi-stream Perceptual Audio Similarity…"</div>
+      <span class="pill">AIRC 2025</span>
+    </div>
+    <div class="ach bronze">
+      <div class="ring"></div>
+      <div class="top"><span class="glyph">🥉</span><span class="ttl">3rd Place · Procom CV</span></div>
+      <div class="sub">FAST NUCES National Competition</div>
+      <span class="pill">Medical Imaging</span>
+    </div>
+  </div>
+</div></body></html>

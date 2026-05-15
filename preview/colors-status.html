@@ -1,0 +1,29 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="_card.css">
+<style>
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; flex: 1; }
+  .item { border-radius: 10px; padding: 14px 16px; border: 1px solid var(--border); background: var(--surface); display: flex; flex-direction: column; gap: 6px; }
+  .top { display: flex; align-items: center; gap: 10px; }
+  .dot { width: 10px; height: 10px; border-radius: 999px; }
+  .nm { font-size: 14px; font-weight: 600; }
+  .hex { font-family: var(--font-mono); font-size: 11px; color: var(--fg2); margin-left: auto; }
+  .chip { font-size: 11px; padding: 4px 10px; border-radius: 999px; align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; }
+  .chip .d { width:6px;height:6px;border-radius:999px; }
+</style></head>
+<body><div class="card">
+  <div class="label">Status &amp; semantic colors</div>
+  <div class="grid">
+    <div class="item">
+      <div class="top"><span class="dot" style="background:#3FB950"></span><span class="nm">Success</span><span class="hex">#3FB950</span></div>
+      <div class="chip" style="background:rgba(63,185,80,0.14);color:#3FB950"><span class="d" style="background:#3FB950"></span>AVAILABLE</div>
+    </div>
+    <div class="item">
+      <div class="top"><span class="dot" style="background:#D29922"></span><span class="nm">Warning / Gold</span><span class="hex">#D29922</span></div>
+      <div class="chip" style="background:rgba(210,153,34,0.14);color:#D29922"><span class="d" style="background:#D29922"></span>AIRC 2025</div>
+    </div>
+    <div class="item">
+      <div class="top"><span class="dot" style="background:#F85149"></span><span class="nm">Danger</span><span class="hex">#F85149</span></div>
+      <div class="chip" style="background:rgba(248,81,73,0.14);color:#F85149"><span class="d" style="background:#F85149"></span>FAILED</div>
+    </div>
+  </div>
+</div></body></html>

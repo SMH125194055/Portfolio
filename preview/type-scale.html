@@ -1,0 +1,18 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="_card.css">
+<style>
+  .card { justify-content: center; gap: 4px; padding: 18px 24px; }
+  .step { display: grid; grid-template-columns: 60px 1fr 100px; align-items: baseline; gap: 14px; padding: 4px 0; border-bottom: 1px solid var(--border-soft); }
+  .step:last-child { border-bottom: none; }
+  .px { font-family: var(--font-mono); font-size: 11px; color: var(--fg3); }
+  .name { font-family: var(--font-mono); font-size: 11px; color: var(--fg2); }
+  .sample { line-height: 1; color: var(--fg1); }
+</style></head>
+<body><div class="card">
+  <div class="step"><span class="px">72</span><span class="sample" style="font-size:42px;font-weight:800;letter-spacing:-0.02em">Display</span><span class="name">--fs-display</span></div>
+  <div class="step"><span class="px">48</span><span class="sample" style="font-size:30px;font-weight:700;letter-spacing:-0.01em">Heading 1</span><span class="name">--fs-h1</span></div>
+  <div class="step"><span class="px">32</span><span class="sample" style="font-size:24px;font-weight:700">Heading 2</span><span class="name">--fs-h2</span></div>
+  <div class="step"><span class="px">24</span><span class="sample" style="font-size:20px;font-weight:600">Heading 3</span><span class="name">--fs-h3</span></div>
+  <div class="step"><span class="px">16</span><span class="sample" style="font-size:16px;font-weight:400">Body paragraph</span><span class="name">--fs-body</span></div>
+  <div class="step"><span class="px">12</span><span class="sample" style="font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:var(--fg2)">EYEBROW</span><span class="name">--fs-xs</span></div>
+</div></body></html>

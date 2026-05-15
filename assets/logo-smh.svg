@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 80" width="240" height="80">
+  
+  <rect width="240" height="80" fill="#0D1117"></rect>
+  <text x="20" y="56" class="smh text">SMH</text>
+  <rect x="118" y="20" width="3" height="40" class="cursor">
+    
+  </rect>
+  <text x="132" y="56" class="smh" fill="#8B949E">/dev</text>
+</svg>

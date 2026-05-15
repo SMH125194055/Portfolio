@@ -1,0 +1,31 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="_card.css">
+<style>
+  .card { gap: 14px; justify-content: center; padding: 28px; }
+  .row { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 10px 18px; border-radius: 6px;
+    font-family: var(--font-sans); font-size: 14px; font-weight: 600;
+    cursor: pointer; border: 1px solid transparent;
+    transition: all 220ms cubic-bezier(0.16,1,0.3,1);
+  }
+  .btn-primary { background: var(--accent); color: #fff; }
+  .btn-primary:hover { background: var(--accent-hover); box-shadow: 0 8px 20px rgba(88,166,255,0.3); transform: translateY(-1px); }
+  .btn-outline { background: transparent; color: var(--fg1); border-color: var(--border); }
+  .btn-outline:hover { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
+  .btn-ghost { background: transparent; color: var(--fg2); }
+  .btn-ghost:hover { color: var(--fg1); background: var(--surface); }
+  .btn-success { background: var(--success); color: #08120A; }
+  .btn-success:hover { background: #4dc861; }
+  .arrow { width: 14px; height: 14px; stroke: currentColor; fill: none; stroke-width: 2; }
+</style></head>
+<body><div class="card">
+  <div class="row">
+    <button class="btn btn-primary">View My Work <svg class="arrow" viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg></button>
+    <button class="btn btn-outline">Download Resume</button>
+    <button class="btn btn-success">Hire on Upwork</button>
+    <button class="btn btn-ghost">Send Email</button>
+  </div>
+  <div class="hint">Primary · Outline · Success · Ghost &nbsp;—&nbsp; hover: lift 1px + glow halo</div>
+</div></body></html>
